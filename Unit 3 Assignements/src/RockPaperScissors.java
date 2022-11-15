@@ -11,7 +11,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import baseGame.Peg;
 
 public class RockPaperScissors extends JFrame implements ActionListener {
 
@@ -19,6 +18,11 @@ public class RockPaperScissors extends JFrame implements ActionListener {
 	String computerChoice;
 	int humanWins;
 	int computerWins;
+	
+	static JLabel humanText = new JLabel("The Human Chose ");
+	static JLabel computerText = new JLabel("The Computer Chose");
+	static JLabel winnerText = new JLabel("The winner is");
+	static JLabel scoreText = new JLabel("The score is");
 
 	public String getComputerChoice() {
 		// Complete this method so that it randomly returns either "Rock", "Paper", or
@@ -64,10 +68,7 @@ public class RockPaperScissors extends JFrame implements ActionListener {
 		//setup the text labels
 		JPanel text = new JPanel();
 		text.setLayout(new BoxLayout(text, BoxLayout.Y_AXIS));
-		JLabel humanText = new JLabel("The Human Chose ");
-		JLabel computerText = new JLabel("The Computer Chose");
-		JLabel winnerText = new JLabel("The winner is");
-		JLabel scoreText = new JLabel("The score is");
+
 		text.add(humanText);
 		text.add(computerText);
 		text.add(winnerText);
