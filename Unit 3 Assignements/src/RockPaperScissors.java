@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+//A GUI based Rock-Paper-Scissors Game. Starter code by Marcus
 
 public class RockPaperScissors extends JFrame implements ActionListener {
 
@@ -97,7 +98,7 @@ public void actionPerformed(ActionEvent e) {
 	
 
 	public static void main(String[] args) {
-
+		//creates a new thread in which to run the GUI and runs the GUI
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				createAndShowGUI();
