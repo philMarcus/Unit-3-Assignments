@@ -46,6 +46,7 @@ public class RockPaperScissors extends JFrame implements ActionListener {
 		// winnerText, and scoreText. When you want to update one of these labels, call
 		// the label's "setText(String)"
 		// method, passing in the string that you want the label to display.
+	}
 
 	private static void createAndShowGUI() {
 
