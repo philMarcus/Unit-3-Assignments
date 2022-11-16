@@ -12,7 +12,8 @@ import javax.swing.JPanel;
 public class TwoButtonsAndALabel extends JFrame implements ActionListener {
 
 	// this class starts with 3 attributes. Two are JButton objects for the user to
-	// click and one is a JLabel object which displays some text.
+	// click and one is a JLabel object which displays some text. You can
+	//add more attributes!
 	// Starter code by Marcus
 	static JLabel label = new JLabel("default text");
 	static JButton left = new JButton("left button");
@@ -76,7 +77,7 @@ public class TwoButtonsAndALabel extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// when a button is clicked, calls your buttonClick method, passing as
 		// an argument whichever JButton object was clicked
-		buttonClick((JButton) e.getSource());
+		buttonClick((JButton)e.getSource());
 
 	}
 
