@@ -10,12 +10,12 @@ In the Take-1,2,3 game two players take turns taking stones from a pile.  On eac
 
 import java.util.Scanner;
 
-public class Take1_3 {
+public class Take123 {
 	private static Scanner kboard;
 
 	private int stonesLeft;
 
-	public Take1_3(int n) {
+	public Take123(int n) {
 		stonesLeft = n;
 	}
 
@@ -72,7 +72,7 @@ public class Take1_3 {
 		kboard = new Scanner(System.in);
 
 		int n = 8 + (int) (4 * Math.random());
-		Take1_3 game = new Take1_3(n);
+		Take123 game = new Take123(n);
 		game.play();
 
 		kboard.close();
